@@ -23,3 +23,7 @@ a:hover{
 	margin: auto;
 	display: block;
 }
+
+#preload{
+	display:none;
+}

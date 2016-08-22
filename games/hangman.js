@@ -11,6 +11,7 @@ var pictures = [
         "<img src='http://www.welovekanjana.com/images/hangman/hang9.png' class='img img-responsive'>", 
          "<img src='http://www.welovekanjana.com/images/hangman/hang10.png' class='img img-responsive'>"
 ];
+
 var letter;
 
 var miss = 0;
@@ -36,7 +37,9 @@ var placeLines = function(target, howMany){
 }
 
 var strike = function(i){
+	$('.hangImg').append(pictures[i]);
 	$('.hangImg').html(pictures[i]);
+
 }
 
 var placeLetters = function(target, wordToGuess, lett){
