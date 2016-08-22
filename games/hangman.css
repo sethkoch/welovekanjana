@@ -1,0 +1,25 @@
+#alphabet{
+	font-size: 24px;
+	font-weight:bold;
+	color:blue;
+	word-spacing: 2px;
+	margin-top:30px;
+	text-align: center;
+	
+}
+a:hover{
+	cursor:pointer;
+}
+
+#word{
+	font-size: 24px;
+	font-weight:bold;
+	word-spacing:14px;
+	text-align:center;
+	margin-top:40px;
+}
+
+.refresh{
+	margin: auto;
+	display: block;
+}
