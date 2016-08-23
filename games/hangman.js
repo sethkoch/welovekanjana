@@ -48,6 +48,9 @@ var strike = function(i){
 
 var youWon = function(){
 	$('.hangImg').html("You are a winner!");
+	setTimeout(function(){
+		location.reload();
+	},1000);
 }
 
 
