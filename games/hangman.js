@@ -15,6 +15,7 @@ var pictures = [
 var letter;
 
 var miss = 0;
+var placedLetters = 0;
 
 
 var words = ["mother", "photography", "Thailand", "author", "Harry Potter", "cooking", "beautiful",
@@ -37,10 +38,14 @@ var placeLines = function(target, howMany){
 }
 
 var strike = function(i){
-	$('.hangImg').append(pictures[i]);
 	$('.hangImg').html(pictures[i]);
-
 }
+
+var youWon = function(){
+	$('.hangImg').html("You are a winner!");
+}
+
+
 
 var placeLetters = function(target, wordToGuess, lett){
 	var counter = 0;
@@ -52,6 +57,12 @@ var placeLetters = function(target, wordToGuess, lett){
 		  counter ++;
 	    }
 	});
+	placedLetters += counter;
+
+		if(placedLetters === wordToGuess.length){
+			youWon();
+		}
+
 	    if(counter === 0){
 	      strike(miss);
 	      miss ++;
@@ -84,7 +95,6 @@ $('body').on('click', '#alphabet > a', function(){
 });
 
 $('.refresh').click(function(){
-	$('.hangImg').html(' ');
-	miss = 0;
+	location.reload();
 })
 
