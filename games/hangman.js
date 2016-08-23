@@ -38,7 +38,12 @@ var placeLines = function(target, howMany){
 }
 
 var strike = function(i){
-	$('.hangImg').html(pictures[i]);
+	if(miss < 10){
+	  $('.hangImg').html(pictures[i]);
+    }
+    else{
+    	location.reload();
+    }
 }
 
 var youWon = function(){
