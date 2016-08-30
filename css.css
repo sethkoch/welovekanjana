@@ -3,7 +3,7 @@
 	text-align:center;
 	margin-top: 20px;
 	border: 10px orange outset;
-
+	box-shadow: 3px 3px 5px darkgrey
 }
 #headLine{
 	font-family: Lobster;
@@ -23,7 +23,7 @@ body{
 	margin-top:5px;
 	margin-bottom: 20px;
 }
-.poam{
+.poem{
 	font-family: cursive;
 	font-size: 20px;
 }
@@ -35,3 +35,46 @@ body{
 blockquote{
 	border-left:none;
 }
+
+
+/*games.html*/
+
+.gamelist{
+	list-style: none;
+	background-color: white;
+	border: 20px white solid;
+	border-radius: 8px;
+	font-style: bold;
+	font-size:20px;
+	
+}
+.gamelist:hover{
+	transform: scale(1.2);
+
+
+}
+
+.gameDivs a{
+	text-decoration: none;
+
+}
+
+.gameTitle{
+	font-size: 30px;
+	color:deeppink;
+	background-color:orange;
+	border-radius:4px;
+}
+.gamelist:hover .gameTitle{
+	color: green;
+	
+}
+/*poams.html*/
+.poems-{
+	font-family: cursive;
+	font-size: 20px;
+	color: deepskyblue;
+	text-shadow: 2px 2px 5px teal;	
+	text-align: center;
+}
+
